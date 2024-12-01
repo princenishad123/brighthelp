@@ -31,7 +31,7 @@ const Navbar = () => {
           toggle ? "-left-[100%]" : "left-0"
         } max-lg:backdrop-blur-md transition-all`}
       >
-        <ul className="bg-slate-100 max-lg:dark:bg-slate-900 da max-lg:w-72 max-md:w-52 max-lg:h-screen max-lg:py-4 max-lg:px-2 ">
+        <ul className="max-lg:bg-slate-100  max-lg:dark:bg-slate-900 da max-lg:w-72 max-md:w-52 max-lg:h-screen max-lg:py-4 max-lg:px-2 ">
           <li className="inline-block max-lg:block max-xl:my-4 mx-3 font-semibold">
             <NavLink
               className={
