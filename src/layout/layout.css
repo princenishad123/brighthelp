@@ -1,0 +1,11 @@
+
+    .customShadow {
+            box-shadow: 0px 0px 220px 150px rgba(47, 18, 235, 0.167);
+            scale: 2;
+        }
+    
+        .customShadow2 {
+            box-shadow: 0px 0px 220px 150px rgba(222, 6, 233, 0.150);
+            scale: 2;
+        }
+ 
