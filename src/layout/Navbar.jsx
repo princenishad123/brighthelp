@@ -1,5 +1,4 @@
 import React, { useContext, useState } from "react";
-import { NavLink } from "react-router-dom";
 import { FaBars } from "react-icons/fa6";
 import { HiMiniXMark } from "react-icons/hi2";
 import MyContext from "../context/contextConfig";
@@ -9,7 +8,6 @@ import { CiDark } from "react-icons/ci";
 const Navbar = () => {
   const { theme, setTheme } = useContext(MyContext);
   const [toggle, setToggle] = useState(true);
-  console.log(localStorage.getItem("theme"));
   const handleTheme = () => {
     if (theme) {
       setTheme(false);
@@ -33,49 +31,54 @@ const Navbar = () => {
       >
         <ul className="max-lg:bg-slate-100  max-lg:dark:bg-slate-900 da max-lg:w-72 max-md:w-52 max-lg:h-screen max-lg:py-4 max-lg:px-2 ">
           <li className="inline-block max-lg:block max-xl:my-4 mx-3 font-semibold">
-            <NavLink
+            <a
+              href="#hero"
               className={
                 "py-1 px-2 hover:text-gray-600 dark:hover:text-gray-300 transition-all text-xl"
               }
             >
               Home
-            </NavLink>
+            </a>
           </li>
           <li className="inline-block max-lg:block max-xl:my-4 mx-3 font-semibold">
-            <NavLink
+            <a
+              href="#services"
               className={
                 "py-1 px-2 hover:text-gray-600 dark:hover:text-gray-300 transition-all text-xl"
               }
             >
               Services
-            </NavLink>
+            </a>
           </li>
           <li className="inline-block max-lg:block max-xl:my-4 mx-3 font-semibold">
-            <NavLink
+            <a
+              href="#roadmap"
               className={
                 "py-1 px-2 hover:text-gray-600 dark:hover:text-gray-300 transition-all text-xl"
               }
             >
               Roadmap
-            </NavLink>
+            </a>
           </li>
           <li className="inline-block max-lg:block max-xl:my-4 mx-3 font-semibold">
-            <NavLink
+            <a
+              href="#why-us"
               className={
                 "py-1 px-2 hover:text-gray-600 dark:hover:text-gray-300 transition-all text-xl"
               }
             >
               Why us
-            </NavLink>
+            </a>
           </li>
           <li className="inline-block max-lg:block max-xl:my-4 mx-3 font-semibold">
-            <NavLink
+            <a
+              href="#about"
               className={
                 "py-1 px-2 hover:text-gray-600 dark:hover:text-gray-300 transition-all text-xl"
               }
             >
               About
-            </NavLink>
+            </a>
           </li>
         </ul>
       </div>

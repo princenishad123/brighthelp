@@ -3,7 +3,7 @@ import React from "react";
 const Roadmap = () => {
   return (
     <div class=" flex items-center justify-center flex-wrap md:gap-0 p-6">
-      <div class="relative scale-75 ">
+      <div class="relative scale-75  ">
         <div class="absolute top-3 left-3 w-full  h-full bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl rotate-[75deg] max-sm:rotate-[12deg]"></div>
 
         <div class="relative min-h-72 border bg-white p-6 rounded-2xl shadow-lg w-72 max-sm:w-64 ">

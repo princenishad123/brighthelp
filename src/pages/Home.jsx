@@ -15,11 +15,13 @@ import Roadmap from "../Components/Roadmap";
 
 const Home = () => {
   const { theme, setTheme } = useContext(MyContext);
-  console.log(theme);
   return (
     <div>
       {/* Hero sections */}
-      <section className="w-full min-h-[85vh] flex justify-center items-center max-md:flex-col px-16 max-sm:px-3">
+      <section
+        id="hero"
+        className="w-full min-h-[85vh] flex justify-center items-center max-md:flex-col px-16 max-sm:px-3 max-sm:pt-12"
+      >
         <div className="w-1/2 max-md:w-full">
           <h1 className="text-7xl font-bold content-center my-4 max-xl:text-5xl max-md:text-center">
             Fast Way to grow your Bussiness <br className="max-md:hidden" />{" "}
@@ -50,7 +52,7 @@ const Home = () => {
       </section>
 
       {/* Why us */}
-      <section>
+      <section id="why-us">
         <h1 className="pt-16 pb-8 text-4xl font-bold text-center">Why us ?</h1>
         <div className="flex justify-center gap-4 flex-wrap">
           <Cards
@@ -107,14 +109,14 @@ const Home = () => {
       </section>
 
       {/* help your own business */}
-      <section>
+      <section id="services">
         <h1 className="pt-12  text-4xl font-bold text-center">Our Services</h1>
 
         <HelpBusines />
       </section>
 
       {/* road map section */}
-      <section className="w-full px-4 sm:px-16 mx-auto">
+      <section id="roadmap" className="w-full px-4 sm:px-16 mx-auto pt-14">
         <h1 className="pb-16 pt-8 text-4xl font-bold text-center">
           Our Roadmap
         </h1>
@@ -128,7 +130,7 @@ const Home = () => {
       </section>
 
       {/* about our bright help */}
-      <section>
+      <section id="about" className="pt-16">
         <About />
       </section>
 
