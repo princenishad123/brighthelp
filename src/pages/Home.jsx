@@ -20,7 +20,7 @@ const Home = () => {
       {/* Hero sections */}
       <section
         id="hero"
-        className="w-full min-h-[85vh] flex justify-center items-center max-md:flex-col px-16 max-sm:px-3 max-sm:pt-12"
+        className="w-full h-auto flex justify-center items-center max-md:flex-col px-16 max-sm:px-3 max-sm:pt-12"
       >
         <div className="w-1/2 max-md:w-full">
           <h1 className="text-7xl font-bold content-center my-4 max-xl:text-5xl max-md:text-center">
