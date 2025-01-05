@@ -17,7 +17,9 @@ const Teams = () => {
     <section className=" y-12 px-6 md:px-16">
       <div className="max-w-7xl mx-auto text-center">
         {/* Heading */}
-        <h2 className="text-4xl font-bold mt-14">OUR CREATIVE TEAM</h2>
+        <h2 className="text-4xl font-bold mt-14 text-transparent bg-clip-text bg-gradient-to-r dark:from-cyan-300 dark:to-cyan-600 from-indigo-200 to-indigo-900">
+          OUR CREATIVE TEAM
+        </h2>
 
         {/* Team Section */}
         <div className="w-full h-auto flex justify-center items-center flex-wrap my-14">

@@ -31,7 +31,7 @@ const HelpBusines = () => {
 
           {/* Button */}
           <div className="mt-6 text-center md:text-left">
-            <button className="bg-purple-600 px-6 py-2 text-white rounded-md hover:bg-purple-700 transition">
+            <button className="custunBtn px-6 py-2 text-white rounded-md hover:bg-purple-700 transition">
               Explore More
             </button>
           </div>

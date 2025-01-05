@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import MyContext from "../context/contextConfig";
 import Cards from "../Components/Cards";
 import { FaHeadset } from "react-icons/fa";
@@ -14,7 +15,6 @@ import AccordianComponent from "../Components/AccordianComponent";
 import Roadmap from "../Components/Roadmap";
 
 const Home = () => {
-  const { theme, setTheme } = useContext(MyContext);
   return (
     <div>
       {/* Hero sections */}
@@ -23,7 +23,7 @@ const Home = () => {
         className="w-full h-auto flex justify-center items-center max-md:flex-col px-16 max-sm:px-3 max-sm:pt-12"
       >
         <div className="w-1/2 max-md:w-full">
-          <h1 className="text-7xl font-bold content-center my-4 max-xl:text-5xl max-md:text-center">
+          <h1 className="text-7xl text-transparent bg-clip-text bg-gradient-to-r dark:from-cyan-300 dark:to-cyan-600 from-black to-slate-400  font-bold content-center my-4 max-xl:text-5xl max-md:text-center">
             Fast Way to grow your Bussiness <br className="max-md:hidden" />{" "}
             with us
           </h1>
@@ -35,9 +35,11 @@ const Home = () => {
             needs.
           </p>
           <div className="max-md:w-full h-auto max-md:flex justify-center">
-            <button className="bg-indigo-600 px-4 py-2 my-4 rounded-full text-white">
-              Connect on WhatsApp
-            </button>
+            <Link to={"https://wa.link/gbgrnk"}>
+              <button className="custunBtn my-4 rounded-full text-white">
+                Connect on WhatsApp
+              </button>
+            </Link>
           </div>
         </div>
         <div className="w-1/2 content-center max-md:w-full">
@@ -53,7 +55,9 @@ const Home = () => {
 
       {/* Why us */}
       <section id="why-us">
-        <h1 className="pt-16 pb-8 text-4xl font-bold text-center">Why us ?</h1>
+        <h1 className="pt-16 pb-8 text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r dark:from-cyan-300 dark:to-cyan-600 from-black to-slate-500">
+          Why us ?
+        </h1>
         <div className="flex justify-center gap-4 flex-wrap">
           <Cards
             title={"Affortable Price"}
@@ -110,14 +114,16 @@ const Home = () => {
 
       {/* help your own business */}
       <section id="services">
-        <h1 className="pt-12  text-4xl font-bold text-center">Our Services</h1>
+        <h1 className="pt-12  text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r dark:from-cyan-300 dark:to-cyan-600 from-black to-slate-400">
+          Our Services
+        </h1>
 
         <HelpBusines />
       </section>
 
       {/* road map section */}
       <section id="roadmap" className="w-full px-4 sm:px-16 mx-auto pt-14">
-        <h1 className="pb-16 pt-8 text-4xl font-bold text-center">
+        <h1 className="pb-16 pt-8 text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r dark:from-cyan-300 dark:to-slate-600 from-black to-slate-400">
           Our Roadmap
         </h1>
 

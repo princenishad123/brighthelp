@@ -25,7 +25,7 @@ const Navbar = () => {
       </div>
       <div
         onClick={() => (toggle ? null : setToggle(true))}
-        className={`max-lg:w-full max-lg:h-screen max-lg:fixed max-lg:top-14  ${
+        className={`max-lg:w-full max-lg:h-screen max-lg:fixed max-lg:top-0  ${
           toggle ? "-left-[100%]" : "left-0"
         } max-lg:backdrop-blur-md transition-all`}
       >

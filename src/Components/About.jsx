@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div>
       <div className="bg-gradient-to-b 0 px-4 md:px-20">
-        <h2 className="text-center text-4xl md:text-5xl font-bold mb-6">
+        <h2 className="text-center text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r dark:from-cyan-300 dark:to-cyan-600 from-black to-slate-400">
           About the Brighthelp
         </h2>
         <div className="flex flex-col md:flex-row items-center md:justify-between">
@@ -31,8 +31,8 @@ const About = () => {
 
           {/* Right Section - Text */}
           <div className="mt-8 md:mt-0 md:w-1/2 text-center md:text-left">
-            <h3 className="text-6xl max-md:text-4xl max-sm:text-2xl font-extrabold max-sm:font-semibold">
-              Create your own <span className="text-purple-400">STARTUP</span>
+            <h3 className="text-6xl max-md:text-4xl max-sm:text-2xl font-extrabold max-sm:font-semibold text-transparent bg-clip-text bg-gradient-to-r dark:from-cyan-300 dark:to-cyan-600 from-slate-600 to-black">
+              Create your own <span className="">STARTUP</span>
             </h3>
             <p className="mt-4 text-lg">
               We are 100% committed to taking your startup from zero to step
@@ -61,7 +61,7 @@ const About = () => {
             <h3 className="text-purple-400 text-sm uppercase font-semibold mb-2">
               Sync and Track
             </h3>
-            <h2 className="text-3xl md:text-5xl font-bold">
+            <h2 className="text-3xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r dark:from-cyan-300 dark:to-cyan-600 from-orange-600 to-orange-400">
               Grow Your Startup <br /> To The Next Level
             </h2>
             <p className="mt-4 text-lg">
